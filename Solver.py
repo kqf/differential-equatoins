@@ -55,4 +55,26 @@ class MultiSolver(Solver):
 
 	def initial_conditions(self, argument = None):
 		return np.ones( self.nx )
-		
+
+
+class StationaryMultiSolver(MultiSolver):
+	def __init__(self, solvers, default_tol = 1e-3):
+		super(StationaryMultiSolver, self).__init__(solvers, 0, 0)
+		self.default_tol = default_tol
+
+	def solve(self, function, tol = None):
+		tol = tol if tol else self.default_tol
+		quantity, error = self.initial_conditions(self.argument), 1.
+
+		while error > tol:
+			new = function(quantity, self.argument(), self.dx) 
+			error = self.distance(new, quantity)
+			quantity = new
+		return quantity
+
+	def distance(self, new, old):
+		numerator = np.sum(new - old)
+		denominator = np.sum(np.abs(old)) + self.default_tol # avoid zeros in the denumerator ?
+		return abs(numerator) / denominator
+
+
