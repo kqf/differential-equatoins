@@ -3,7 +3,7 @@
 
 import matplotlib.pyplot as plt
 # import numpy as np
-from Solver import Solver
+from solver.solver import Solver
 
 
 def convect_step(uv, dx, dt):

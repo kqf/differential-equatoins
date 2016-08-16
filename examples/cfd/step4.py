@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sympy
 
-from Solver import Solver
+from solver.solver import Solver
 
 
 def profile():

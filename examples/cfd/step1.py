@@ -5,7 +5,7 @@ import seaborn as sn
 import matplotlib.pyplot as plt
 import numpy as np
 
-from Solver import Solver
+from solver.solver import Solver
 
 ## convection equation in terms of finite differences
 def convect_step(un, dx, dt):

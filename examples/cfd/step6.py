@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import cm
 
-from Solver import Solver, MultiSolver
+from solver.solver import Solver, MultiSolver
 
 
 def profile(solver):

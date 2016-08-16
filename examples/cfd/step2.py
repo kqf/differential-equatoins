@@ -2,7 +2,7 @@
 
 
 import matplotlib.pyplot as plt
-from Solver import Solver
+from solver.solver import Solver
 
 
 # nonlinear convection equation in terms of finite differences

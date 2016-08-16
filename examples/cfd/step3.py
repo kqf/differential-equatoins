@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 
-from Solver import Solver
+from solver.solver import Solver
 import matplotlib.pyplot as plt
 
 # diffusion equation in terms of finite differences
