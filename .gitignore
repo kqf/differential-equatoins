@@ -6,3 +6,4 @@
 *.root
 *.jpg
 *.python-version
+*.egg-info*
