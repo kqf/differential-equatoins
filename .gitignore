@@ -1,10 +1,12 @@
+# python related files
+*.egg-info*
 *.pyc
+*.python-version
+.pytest_cache
+
+# Images
 *.png
 *.pdf
 *.eps
-*.json
-*.root
 *.jpg
-*.python-version
-*.egg-info*
-.pytest_cache
+
