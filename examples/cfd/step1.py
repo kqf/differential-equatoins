@@ -11,7 +11,7 @@ def convect_step(un, dx, dt):
     # forward difference
     result[1:] = un[1:] - c * dt / dx * (un[1:] - un[0:-1])
 
-    # Boundary condition	for forward difference
+    # Boundary condition for forward difference
     result[0] = 1
     return result
 
