@@ -1,4 +1,4 @@
-Differential equations [](https://travis-ci.com/kqf/differential-equatoins.svg?token=7bkqqhrPB19pD1YKrAZM&branch=master)
+Differential equations ![build](https://travis-ci.com/kqf/differential-equatoins.svg?token=7bkqqhrPB19pD1YKrAZM&branch=master)
 ----------------------
 
 This repo was inspired by awesome [CFD Python](https://github.com/barbagroup/CFDPython) lectures. It is an attempt to create a **very basic** tool for solving differential equations, and collect some interesting solutinons and nice plots.
